@@ -87,10 +87,10 @@ WHERE l.language-name = 'Anglais'"
 
 >CREATE TABLE article-tag
 ( 
-    id-tag INT NOT NULL, 
-    id-article INT NOT NULL
-    CONSTRAINT FK_ARTICLE-TAG_TAG FOREIGN KEY(id-tag) REFERENCES tag(id-tag) 
-    CONSTRAINT FK_TAG_ARTICLE-TAG FOREIGN KEY(id-article) REFERENCES article(id-article)   
+    id-tag INT NOT NULL, </br>
+    id-article INT NOT NULL </br>
+    CONSTRAINT FK_ARTICLE-TAG_TAG FOREIGN KEY(id-tag) </br> REFERENCES tag(id-tag) </br>
+    CONSTRAINT FK_TAG_ARTICLE-TAG FOREIGN KEY(id-article) </br>REFERENCES article(id-article)   </br>
 )
 
 >CREATE TABLE commentary
